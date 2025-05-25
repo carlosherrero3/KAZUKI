@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -9,11 +9,25 @@ public class Historia : MonoBehaviour
     public TextMeshProUGUI historiaTexto;
     [TextArea(3, 10)]
     public string[] parrafos;
-    public float velocidadEscritura = 0.05f; // Tiempo entre letras
+    public float velocidadEscritura = 0.05f;
 
     private int indice = 0;
     private bool escribiendo = false;
-    private bool finDelTexto = false; // NUEVA VARIABLE
+    private bool finDelTexto = false;
+
+    [System.Serializable]
+    public class EventoFade
+    {
+        public int lineaDeTexto;
+        public int indiceImagen;
+    }
+
+    public List<EventoFade> eventosFade;
+    public FadeIn fadeInScript;
+
+    // ðŸŽµ Sonido de clic
+    public AudioSource audioSource;
+    public AudioClip sonidoClick;
 
     void Start()
     {
@@ -24,9 +38,12 @@ public class Historia : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            // ðŸŽµ Reproducir sonido de clic
+            if (sonidoClick != null && audioSource != null)
+                audioSource.PlayOneShot(sonidoClick);
+
             if (escribiendo)
             {
-                // Si se hace clic durante la escritura, mostrar el texto completo
                 StopAllCoroutines();
                 historiaTexto.text = parrafos[indice];
                 escribiendo = false;
@@ -35,8 +52,7 @@ public class Historia : MonoBehaviour
             {
                 if (finDelTexto)
                 {
-                    // CAMBIO DE ESCENA AQUÍ
-                    SceneManager.LoadScene("NombreDeTuEscena"); // Reemplaza con el nombre correcto
+                    SceneManager.LoadScene("Nivel 1"); // Cambia por el nombre real de tu escena
                     return;
                 }
 
@@ -44,11 +60,20 @@ public class Historia : MonoBehaviour
                 if (indice < parrafos.Length)
                 {
                     StartCoroutine(EscribirTexto(parrafos[indice]));
+
+                    // Ejecutar fade si aplica
+                    foreach (var evento in eventosFade)
+                    {
+                        if (evento.lineaDeTexto == indice)
+                        {
+                            fadeInScript.DesvanecerImagenPorIndice(evento.indiceImagen);
+                        }
+                    }
                 }
                 else
                 {
                     historiaTexto.text = "";
-                    finDelTexto = true; // Ya no hay más texto, próxima pulsación cambia de escena
+                    finDelTexto = true;
                 }
             }
         }
@@ -58,11 +83,13 @@ public class Historia : MonoBehaviour
     {
         escribiendo = true;
         historiaTexto.text = "";
+
         foreach (char letra in texto.ToCharArray())
         {
             historiaTexto.text += letra;
             yield return new WaitForSeconds(velocidadEscritura);
         }
+
         escribiendo = false;
     }
 }

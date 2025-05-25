@@ -35,6 +35,18 @@ public class FadeIn : MonoBehaviour
         }
     }
 
+    public void DesvanecerImagenPorIndice(int indice)
+    {
+        if (indice >= 0 && indice < capasNegras.Count)
+        {
+            var capa = capasNegras[indice];
+            if (!capa.yaDesvanecida)
+            {
+                StartCoroutine(FadeOut(capa));
+            }
+        }
+    }
+
     IEnumerator FadeOut(ImagenConClicks capa)
     {
         capa.yaDesvanecida = true;

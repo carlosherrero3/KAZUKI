@@ -4984,7 +4984,7 @@ MonoBehaviour:
   scriptsJugador:
   - {fileID: 1124605003}
   - {fileID: 1883097518}
-  sonidoEscritura: {fileID: 8300000, guid: f62af950e0dd9d747b4b28de1ab3d184, type: 3}
+  sonidoEscritura: {fileID: 8300000, guid: 46d8c300a6cd2e74daea73ab3ef13e03, type: 3}
   bloquearMovimientoCamara: 1
 --- !u!114 &279357976
 MonoBehaviour:
@@ -52414,7 +52414,7 @@ SceneRoots:
   - {fileID: 630788397}
   - {fileID: 190534663}
   - {fileID: 1494442193}
+  - {fileID: 521660772}
+  - {fileID: 819983732}
   - {fileID: 279357961}
   - {fileID: 196179289}
-  - {fileID: 819983732}
-  - {fileID: 521660772}
