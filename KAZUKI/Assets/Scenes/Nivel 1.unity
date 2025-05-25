@@ -4984,7 +4984,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279357958}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce7e5f399f174774aae6be781ad3f2f9, type: 3}
   m_Name: 
@@ -34096,6 +34096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624540816}
   - component: {fileID: 1624540815}
+  - component: {fileID: 1624540817}
   m_Layer: 0
   m_Name: '- CONTROL DE MENSAJE -'
   m_TagString: Untagged
@@ -34110,7 +34111,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624540814}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb4e67a23629067488142a2c5e6abb18, type: 3}
   m_Name: 
@@ -34130,6 +34131,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1624540817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624540814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d129d8b5895094583101b58c5e34c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelMensaje: {fileID: 2135559170}
+  textoMensaje: {fileID: 859771922}
+  frase: Kazuki debe encontrar su arma para enfrentar a los ninjas y recuperar los
+    pedazos de la corona.
+  tiempoPorLetra: 0.05
+  tiempoVisibleDespues: 3
+  velocidadFade: 1
+  fadeInDuration: 1
+  sonidoEscritura: {fileID: 8300000, guid: 46d8c300a6cd2e74daea73ab3ef13e03, type: 3}
+  volumenAudio: 0.822
+  scriptsJugador:
+  - {fileID: 4237315832304755157}
+  - {fileID: 1124605003}
+  bloquearMovimientoCamara: 1
+  nombreEscenaObjetivo: Nivel 1
 --- !u!1 &1630579486
 GameObject:
   m_ObjectHideFlags: 0
@@ -52034,7 +52062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2135559171
 RectTransform:
   m_ObjectHideFlags: 0
