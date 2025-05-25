@@ -5,13 +5,13 @@ using System.Collections;
 public class MensajeInicial: MonoBehaviour
 {
     [Header("Configuración del Mensaje")]
-    [SerializeField] private GameObject panelMensaje;
+    [SerializeField] public GameObject panelMensaje;
     [SerializeField] private TextMeshProUGUI textoMensaje;
     [TextArea(3, 10)][SerializeField] private string frase = "Escribe aquí tu mensaje inicial";
     [SerializeField] private float tiempoPorLetra = 0.05f;
     [SerializeField] private float tiempoVisibleDespues = 2f;
     [SerializeField] private float velocidadFade = 1f;
-    [SerializeField] private float fadeInDuration = 1f; // Nuevo: Duración del fade in
+    [SerializeField] private float fadeInDuration = 1f;
 
     [Header("Control del Jugador")]
     [SerializeField] private MonoBehaviour[] scriptsJugador;
@@ -22,15 +22,9 @@ public class MensajeInicial: MonoBehaviour
     private AudioSource audioSource;
     private bool bloqueoActivo = false;
 
-    private void Start()
+    private void Awake()
     {
-        InitializeComponents();
-        StartCoroutine(SequenciaCompleta());
-    }
-
-    private void InitializeComponents()
-    {
-        // Configuración inicial del panel con fade in
+        // Asegurarse de que el panel está activo para configurar el CanvasGroup
         if (panelMensaje != null)
         {
             canvasGroup = panelMensaje.GetComponent<CanvasGroup>();
@@ -38,19 +32,38 @@ public class MensajeInicial: MonoBehaviour
             {
                 canvasGroup = panelMensaje.AddComponent<CanvasGroup>();
             }
-            canvasGroup.alpha = 0f; // Empieza invisible
-            panelMensaje.SetActive(true);
         }
 
-        // Configurar audio
-        if (sonidoEscritura != null)
+        if (sonidoEscritura != null && audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.clip = sonidoEscritura;
             audioSource.loop = true;
         }
+    }
 
-        // Limpiar texto inicial
+    private void OnEnable()
+    {
+        // Opcional: puedes llamar ReiniciarMensaje() aquí si quieres que siempre inicie al activarse
+        // ReiniciarMensaje();
+    }
+
+    // Método público para reiniciar el mensaje desde fuera
+    public void ReiniciarMensaje()
+    {
+        StopAllCoroutines();
+        InitializeComponents();
+        StartCoroutine(SequenciaCompleta());
+    }
+
+    private void InitializeComponents()
+    {
+        if (panelMensaje != null)
+        {
+            panelMensaje.SetActive(true);
+            canvasGroup.alpha = 0f; // Empieza invisible
+        }
+
         if (textoMensaje != null)
         {
             textoMensaje.text = "";
@@ -59,22 +72,16 @@ public class MensajeInicial: MonoBehaviour
 
     private IEnumerator SequenciaCompleta()
     {
-        // 1. Fade In del panel
         yield return StartCoroutine(EfectoFade(0f, 1f, fadeInDuration));
 
-        // 2. Bloquear controles (después del fade in)
         DesactivarControlesJugador(true);
 
-        // 3. Efecto de escritura
         yield return StartCoroutine(EscribirTexto());
 
-        // 4. Tiempo con mensaje completo
         yield return new WaitForSeconds(tiempoVisibleDespues);
 
-        // 5. Fade Out
         yield return StartCoroutine(EfectoFade(1f, 0f, velocidadFade));
 
-        // 6. Finalizar
         panelMensaje.SetActive(false);
         DesactivarControlesJugador(false);
     }
@@ -93,20 +100,17 @@ public class MensajeInicial: MonoBehaviour
 
     private IEnumerator EscribirTexto()
     {
-        // Iniciar sonido (si existe)
         if (audioSource != null)
         {
             audioSource.Play();
         }
 
-        // Escribir letra por letra
         for (int i = 0; i <= frase.Length; i++)
         {
             textoMensaje.text = frase.Substring(0, i);
             yield return new WaitForSeconds(tiempoPorLetra);
         }
 
-        // Detener sonido
         if (audioSource != null)
         {
             audioSource.Stop();
@@ -128,7 +132,6 @@ public class MensajeInicial: MonoBehaviour
         Cursor.lockState = desactivar ? CursorLockMode.None : CursorLockMode.Locked;
         Cursor.visible = desactivar;
 
-        // Bloqueo adicional de cámara
         if (bloquearMovimientoCamara)
         {
             var mouseLook = Camera.main.GetComponent<MonoBehaviour>();
@@ -137,7 +140,7 @@ public class MensajeInicial: MonoBehaviour
                 var sensitivity = mouseLook.GetType().GetProperty("sensitivity");
                 if (sensitivity != null)
                 {
-                    sensitivity.SetValue(mouseLook, desactivar ? 0f : 2f); // 2f es sensibilidad por defecto
+                    sensitivity.SetValue(mouseLook, desactivar ? 0f : 2f);
                 }
             }
         }
@@ -165,7 +168,6 @@ public class MensajeInicial: MonoBehaviour
         DesactivarControlesJugador(false);
     }
 
-    // Bloqueo adicional de movimiento de cámara en Update
     private void Update()
     {
         if (bloqueoActivo && bloquearMovimientoCamara)
@@ -182,5 +184,23 @@ public class MensajeInicial: MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ForzarMostrarMensaje()
+    {
+        StopAllCoroutines();
+
+        if (panelMensaje != null)
+        {
+            panelMensaje.SetActive(true);
+            canvasGroup.alpha = 0f;
+        }
+
+        if (textoMensaje != null)
+        {
+            textoMensaje.text = "";
+        }
+
+        StartCoroutine(SequenciaCompleta());
     }
 }
