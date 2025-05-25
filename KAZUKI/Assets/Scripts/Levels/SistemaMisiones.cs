@@ -1,21 +1,21 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class SistemaMisiones : MonoBehaviour
 {
-    [Header("Configuración de Objeto")]
+    [Header("Configuraciï¿½n de Objeto")]
     [SerializeField] private GameObject objetoRequerido;
     [SerializeField] private string tagObjeto = "Arma";
     [SerializeField] private Transform puntoEnMano;
 
-    [Header("Configuración de Paneles")]
+    [Header("Configuraciï¿½n de Paneles")]
     [SerializeField] private PanelDialogo panelExito;
     [SerializeField] private PanelDialogo panelFracaso;
     [SerializeField] private float tiempoCambioEscena = 3f;
 
-    [Header("Configuración de Escena")]
+    [Header("Configuraciï¿½n de Escena")]
     [SerializeField] private string nombreSiguienteEscena;
 
     private bool tieneObjeto = false;
@@ -27,7 +27,7 @@ public class SistemaMisiones : MonoBehaviour
         {
             if (tieneObjeto)
             {
-                // Mostrar mensaje de éxito y cambiar escena
+                // Mostrar mensaje de ï¿½xito y cambiar escena
                 panelExito.MostrarPanel();
                 StartCoroutine(CambiarEscenaDespuesDeTiempo());
             }
@@ -45,7 +45,7 @@ public class SistemaMisiones : MonoBehaviour
         SceneManager.LoadScene(nombreSiguienteEscena);
     }
 
-    // Método para llamar cuando se recoge el objeto
+    // Mï¿½todo para llamar cuando se recoge el objeto
     public void RecogerObjeto(GameObject objeto)
     {
         if (objeto.CompareTag(tagObjeto))

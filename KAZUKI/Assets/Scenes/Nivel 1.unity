@@ -3609,7 +3609,7 @@ GameObject:
   - component: {fileID: 190534663}
   - component: {fileID: 190534662}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: DIRECTIONAL LIGHT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3840,7 +3840,7 @@ GameObject:
   - component: {fileID: 196179291}
   - component: {fileID: 196179290}
   m_Layer: 0
-  m_Name: Music Manager
+  m_Name: '- MUSIC MANAGER -'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7170,6 +7170,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370043516}
   m_CullTransparentMesh: 1
+--- !u!1 &371321008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3541407311271098310, guid: 45936ee2450079c47beee03b64c63512, type: 3}
+  m_PrefabInstance: {fileID: 4237315832304755156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &384216549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11178,6 +11183,84 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.682178, y: 17.52901, z: 6.792724}
   m_Center: {x: 7.345564, y: -1.9516839, z: 3.3889248}
+--- !u!1001 &521660772
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.9136755
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.9136755
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.9136755
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 951.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 259.633
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1347.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788233345923850213, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600799223987094879, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      propertyPath: m_Name
+      value: NinjaV1@Ninja Idle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4600799223987094879, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1800301183}
+    - targetCorrespondingSourceObject: {fileID: 4600799223987094879, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1800301182}
+    - targetCorrespondingSourceObject: {fileID: 4600799223987094879, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1800301181}
+  m_SourcePrefab: {fileID: 100100000, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
 --- !u!1 &524332427
 GameObject:
   m_ObjectHideFlags: 0
@@ -17583,7 +17666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &819983728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17705,33 +17788,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 020d905a8cf546b48851b602b0c584c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoRequerido: {fileID: 1150543504}
+  objetoRequerido: {fileID: 0}
   tagObjeto: Arma
-  puntoEnMano: {fileID: 1295072333}
+  puntoEnMano: {fileID: 0}
   panelExito:
-    panel: {fileID: 1320471487}
-    texto: {fileID: 41366613}
-    sonidoEscritura: {fileID: 8300000, guid: f62af950e0dd9d747b4b28de1ab3d184, type: 3}
-    sonidoAparicion: {fileID: 8300000, guid: 86b1aaa2fbcbf5e428a07210a77defc4, type: 3}
-    mensaje: "\xBFCrees que est\xE1s listo para el reto? Demu\xE9stralo cortando
-      50 frutas en un minuto. Solo entonces te dar\xE9 un fragmento de la corona.
-      \xBFTienes lo que se necesita, Kazuki?"
-    tiempoPorLetra: 0.0843
-    tiempoVisible: 3.2
+    panel: {fileID: 0}
+    texto: {fileID: 0}
+    sonidoEscritura: {fileID: 0}
+    sonidoAparicion: {fileID: 0}
+    mensaje: 
+    tiempoPorLetra: 0.05
+    tiempoVisible: 2
     fadeInDuration: 1
     fadeOutDuration: 1
   panelFracaso:
-    panel: {fileID: 1968878818}
-    texto: {fileID: 190774868}
-    sonidoEscritura: {fileID: 8300000, guid: f62af950e0dd9d747b4b28de1ab3d184, type: 3}
-    sonidoAparicion: {fileID: 8300000, guid: 86b1aaa2fbcbf5e428a07210a77defc4, type: 3}
-    mensaje: "Sin tu arma no podr\xE9 darte el trozo de corona que necesitas."
-    tiempoPorLetra: 0.2307
-    tiempoVisible: 2.98
+    panel: {fileID: 0}
+    texto: {fileID: 0}
+    sonidoEscritura: {fileID: 0}
+    sonidoAparicion: {fileID: 0}
+    mensaje: 
+    tiempoPorLetra: 0.05
+    tiempoVisible: 2
     fadeInDuration: 1
     fadeOutDuration: 1
   tiempoCambioEscena: 3
-  nombreSiguienteEscena: FruitNinja
+  nombreSiguienteEscena: 
 --- !u!1 &825833193
 GameObject:
   m_ObjectHideFlags: 0
@@ -37263,6 +37344,90 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1 &1800301178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4600799223987094879, guid: fb2b36e7611ad5d44b7cf4dca8a3c19c, type: 3}
+  m_PrefabInstance: {fileID: 521660772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1800301181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800301178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020d905a8cf546b48851b602b0c584c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoRequerido: {fileID: 1150543504}
+  tagObjeto: Arma
+  puntoEnMano: {fileID: 1295072333}
+  panelExito:
+    panel: {fileID: 1320471487}
+    texto: {fileID: 41366613}
+    sonidoEscritura: {fileID: 8300000, guid: 46d8c300a6cd2e74daea73ab3ef13e03, type: 3}
+    sonidoAparicion: {fileID: 8300000, guid: 86b1aaa2fbcbf5e428a07210a77defc4, type: 3}
+    mensaje: aaaaa
+    tiempoPorLetra: 0.05
+    tiempoVisible: 3.2
+    fadeInDuration: 1
+    fadeOutDuration: 1
+  panelFracaso:
+    panel: {fileID: 1968878818}
+    texto: {fileID: 190774868}
+    sonidoEscritura: {fileID: 8300000, guid: 46d8c300a6cd2e74daea73ab3ef13e03, type: 3}
+    sonidoAparicion: {fileID: 8300000, guid: 86b1aaa2fbcbf5e428a07210a77defc4, type: 3}
+    mensaje: aaaa
+    tiempoPorLetra: 0.05
+    tiempoVisible: 2.98
+    fadeInDuration: 1
+    fadeOutDuration: 1
+  tiempoCambioEscena: 3
+  nombreSiguienteEscena: FruitNinja
+--- !u!65 &1800301182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800301178}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &1800301183
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800301178}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.09210757, y: 0.23460513, z: 0.18207847}
+  m_Center: {x: -0.011029028, y: 0.092123285, z: 0.022581752}
 --- !u!1 &1816844467
 GameObject:
   m_ObjectHideFlags: 0
@@ -47335,12 +47500,108 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7554661614070076649, guid: 45936ee2450079c47beee03b64c63512, type: 3}
   m_PrefabInstance: {fileID: 4237315832304755156}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 371321008}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 893e5b503685f3e4facb62829b54aa3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1883097522
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371321008}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6b36f94d9cd71c649b4c422c1ad9aef2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1884903399
 GameObject:
   m_ObjectHideFlags: 0
@@ -52123,13 +52384,24 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 1124605002}
+    - target: {fileID: 7554661614070076649, guid: 45936ee2450079c47beee03b64c63512, type: 3}
+      propertyPath: footstepClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b36f94d9cd71c649b4c422c1ad9aef2, type: 3}
+    - target: {fileID: 7554661614070076649, guid: 45936ee2450079c47beee03b64c63512, type: 3}
+      propertyPath: footstepAudioSource
+      value: 
+      objectReference: {fileID: 1883097522}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2616976436248851807, guid: 45936ee2450079c47beee03b64c63512, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1295072333}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3541407311271098310, guid: 45936ee2450079c47beee03b64c63512, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1883097522}
   m_SourcePrefab: {fileID: 100100000, guid: 45936ee2450079c47beee03b64c63512, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -52140,8 +52412,9 @@ SceneRoots:
   - {fileID: 4237315832304755156}
   - {fileID: 704366387}
   - {fileID: 630788397}
+  - {fileID: 190534663}
   - {fileID: 1494442193}
   - {fileID: 279357961}
-  - {fileID: 819983732}
-  - {fileID: 190534663}
   - {fileID: 196179289}
+  - {fileID: 819983732}
+  - {fileID: 521660772}

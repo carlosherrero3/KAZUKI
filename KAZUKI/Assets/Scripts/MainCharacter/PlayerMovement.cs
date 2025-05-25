@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,10 +15,22 @@ public class PlayerMovement : MonoBehaviour
     private float verticalVelocity = 0f;
     private bool isJumping = false;
 
+    // 🎵 NUEVO: Audio
+    public AudioSource footstepAudioSource;
+    public AudioClip footstepClip;
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+
+        // 🎵 NUEVO: Inicializar el audio si no está asignado
+        if (footstepAudioSource == null)
+        {
+            footstepAudioSource = gameObject.AddComponent<AudioSource>();
+            footstepAudioSource.clip = footstepClip;
+            footstepAudioSource.loop = true;
+        }
     }
 
     void Update()
@@ -79,7 +91,19 @@ public class PlayerMovement : MonoBehaviour
         if (isJumping && characterController.isGrounded && verticalVelocity < 0f)
         {
             isJumping = false;
-            animator.SetBool("IsInAir", false); // se baja al aterrizar
+            animator.SetBool("IsInAir", false);
+        }
+
+        // 🎵 NUEVO: Reproducir sonido de pasos
+        if (characterController.isGrounded && movementSpeed > 0.1f)
+        {
+            if (!footstepAudioSource.isPlaying)
+                footstepAudioSource.Play();
+        }
+        else
+        {
+            if (footstepAudioSource.isPlaying)
+                footstepAudioSource.Pause();
         }
     }
 }
