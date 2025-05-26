@@ -5,35 +5,50 @@ using System.Collections;
 
 public class SistemaMisiones : MonoBehaviour
 {
-    [Header("Configuraci�n de Objeto")]
+    [Header("Configuración de Objeto")]
     [SerializeField] private GameObject objetoRequerido;
     [SerializeField] private string tagObjeto = "Arma";
     [SerializeField] private Transform puntoEnMano;
 
-    [Header("Configuraci�n de Paneles")]
+    [Header("Configuración de Paneles")]
     [SerializeField] private PanelDialogo panelExito;
     [SerializeField] private PanelDialogo panelFracaso;
     [SerializeField] private float tiempoCambioEscena = 3f;
 
-    [Header("Configuraci�n de Escena")]
+    [Header("Configuración de Escena")]
     [SerializeField] private string nombreSiguienteEscena;
 
     private bool tieneObjeto = false;
     private GameObject objetoRecogido;
+    private bool jugadorCerca = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            jugadorCerca = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            jugadorCerca = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (jugadorCerca && Input.GetKeyDown(KeyCode.E))
+        {
             if (tieneObjeto)
             {
-                // Mostrar mensaje de �xito y cambiar escena
                 panelExito.MostrarPanel();
                 StartCoroutine(CambiarEscenaDespuesDeTiempo());
             }
             else
             {
-                // Mostrar mensaje de que falta el objeto
                 panelFracaso.MostrarPanel();
             }
         }
@@ -45,7 +60,7 @@ public class SistemaMisiones : MonoBehaviour
         SceneManager.LoadScene(nombreSiguienteEscena);
     }
 
-    // M�todo para llamar cuando se recoge el objeto
+    // Método para llamar cuando se recoge el objeto
     public void RecogerObjeto(GameObject objeto)
     {
         if (objeto.CompareTag(tagObjeto))

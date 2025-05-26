@@ -7900,6 +7900,75 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!1 &410256138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410256141}
+  - component: {fileID: 410256140}
+  - component: {fileID: 410256142}
+  m_Layer: 0
+  m_Name: ZONA DE MISION
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &410256140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410256138}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &410256141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410256138}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 951.708, y: 259.633, z: 1347.035}
+  m_LocalScale: {x: 2.9136755, y: 2.9136755, z: 2.9136755}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &410256142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410256138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25111790f9b9de4ca6cb6f623105260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: FruitNinja
+  uiPanel: {fileID: 1320471487}
+  delayBeforeSceneLoad: 2
 --- !u!1001 &410897422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52195,6 +52264,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3541407311271098310, guid: 45936ee2450079c47beee03b64c63512, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1883097522}
+    - targetCorrespondingSourceObject: {fileID: 3541407311271098310, guid: 45936ee2450079c47beee03b64c63512, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4237315832304755161}
   m_SourcePrefab: {fileID: 100100000, guid: 45936ee2450079c47beee03b64c63512, type: 3}
 --- !u!114 &4237315832304755157 stripped
 MonoBehaviour:
@@ -52207,6 +52279,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893e5b503685f3e4facb62829b54aa3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &4237315832304755161
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371321008}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -52218,6 +52317,7 @@ SceneRoots:
   - {fileID: 630788397}
   - {fileID: 190534663}
   - {fileID: 1494442193}
+  - {fileID: 410256141}
   - {fileID: 521660772}
   - {fileID: 819983732}
   - {fileID: 279357961}
