@@ -7,40 +7,27 @@ public class TriggerArea : MonoBehaviour
 {
     public string sceneName;               // Nombre de la escena a cargar
     public GameObject uiPanel;             // Panel que se mostrará
-    public float delayBeforeSceneLoad = 2f; // Tiempo antes de cargar la escena (opcional)
+    public float delayBeforeSceneLoad = 2f; // Tiempo antes de cargar la escena
 
-    private bool isPlayerInside = false;
+    private bool yaActivado = false;
 
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (isPlayerInside && Input.GetKeyDown(KeyCode.E))
+        if (!yaActivado && other.CompareTag("Player"))
         {
+            yaActivado = true;
+
             if (uiPanel != null)
             {
                 uiPanel.SetActive(true);
             }
-            Invoke("LoadScene", delayBeforeSceneLoad); // Espera antes de cargar la escena
+
+            Invoke("LoadScene", delayBeforeSceneLoad);
         }
     }
 
     void LoadScene()
     {
         SceneManager.LoadScene(sceneName);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isPlayerInside = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isPlayerInside = false;
-        }
     }
 }
