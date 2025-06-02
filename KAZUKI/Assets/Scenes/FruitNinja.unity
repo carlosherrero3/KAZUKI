@@ -1390,7 +1390,7 @@ GameObject:
   - component: {fileID: 1136782206}
   - component: {fileID: 1136782205}
   m_Layer: 0
-  m_Name: -MUSICMANAGER-
+  m_Name: '- MUSICMANAGER -'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1869,7 +1869,7 @@ GameObject:
   - component: {fileID: 1442567889}
   - component: {fileID: 1442567890}
   m_Layer: 0
-  m_Name: SCRIPTS
+  m_Name: '- SCRIPTS -'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1942,7 +1942,7 @@ MonoBehaviour:
   botonReiniciar: {fileID: 218412365}
   botonSalir: {fileID: 703449090}
   escenaMenu: Menu Inicio
-  escenaNivel1: Nivel 1
+  escenaNivel1: Nivel 1b
 --- !u!114 &1442567889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1960,7 +1960,7 @@ MonoBehaviour:
   - {fileID: 703449090}
   sceneNames:
   - FruitNinja
-  - Meni Inicio
+  - Menu Inicio
 --- !u!114 &1442567890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2590,6 +2590,6 @@ SceneRoots:
   - {fileID: 835024513}
   - {fileID: 1865947124}
   - {fileID: 1242411736}
-  - {fileID: 1442567885}
-  - {fileID: 1136782206}
   - {fileID: 622275363}
+  - {fileID: 1136782206}
+  - {fileID: 1442567885}
