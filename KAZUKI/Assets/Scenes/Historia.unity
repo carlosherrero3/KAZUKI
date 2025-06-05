@@ -262,8 +262,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -268.73874, y: 0, z: -267.67657, w: 0}
+  m_margin: {x: -3.5351028, y: -33.20489, z: -252.41595, w: -16.90747}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -782,20 +782,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   historiaTexto: {fileID: 250597960}
   parrafos:
-  - Esta historia comienza como todas las demas.
-  - Kazuki, nuestro protagonista vivia tranquilamente.
+  - "Esta historia comienza como todas las dem\xE1s."
+  - "Kazuki, nuestro protagonista viv\xEDa tranquilamente."
   - Su aldea no era muy grande, pero estaba llena de paz
-  - Todo el mundo vivia tranquilamente en las tierras del Shogunato.
+  - "Todo el mundo viv\xEDa  tranquilamente en las tierras del Shogunato."
   - Hasta aquella noche.
   - "Aquella noche, su aldea fue arrasada por los D\u0101kuninja."
   - "La corona del destino hab\xEDa sido robada y con ello el Shogunato se sumi\xF3
     en el caos."
-  - "Kazuki pudo ver esa noche como uno de los cinco samurais del emperador ca\xEDa."
+  - "Kazuki pudo ver esa noche como uno de los cinco samur\xE1is del emperador ca\xEDa."
   - Este, antes de morir le entrega su espada, la "Kikodoro", una de las espadas
     ancestrales.
   - "Es aqu\xED donde comienza la historia."
-  - Es aqui donde comienza la aventura de Kazuki.
-  velocidadEscritura: 0.1
+  - "Es aqu\xED donde comienza la aventura de Kazuki."
+  velocidadEscritura: 0.08
   eventosFade:
   - lineaDeTexto: 2
     indiceImagen: 0

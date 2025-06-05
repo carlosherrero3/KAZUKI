@@ -4791,7 +4791,6 @@ GameObject:
   - component: {fileID: 279357969}
   - component: {fileID: 279357972}
   - component: {fileID: 279357973}
-  - component: {fileID: 279357977}
   m_Layer: 0
   m_Name: '- SCRIPTS -'
   m_TagString: Untagged
@@ -4977,31 +4976,6 @@ MonoBehaviour:
   zoomFOV: 30
   normalFOV: 60
   zoomSpeed: 5
---- !u!114 &279357977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279357958}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7e5f399f174774aae6be781ad3f2f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelMensaje: {fileID: 2135559170}
-  textoMensaje: {fileID: 859771922}
-  frase: Kazuki debe encontrar su arma para enfrentar a los ninjas y recuperar los
-    pedazos de la corona.
-  tiempoPorLetra: 0.05
-  tiempoVisibleDespues: 2
-  velocidadFade: 1
-  fadeInDuration: 1
-  scriptsJugador:
-  - {fileID: 4237315832304755157}
-  - {fileID: 1124605003}
-  sonidoEscritura: {fileID: 8300000, guid: 46d8c300a6cd2e74daea73ab3ef13e03, type: 3}
-  bloquearMovimientoCamara: 1
 --- !u!1001 &282464929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53146,7 +53120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4210385728254291324, guid: 45936ee2450079c47beee03b64c63512, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 944.668
+      value: 945.134
       objectReference: {fileID: 0}
     - target: {fileID: 4210385728254291324, guid: 45936ee2450079c47beee03b64c63512, type: 3}
       propertyPath: m_LocalPosition.y
@@ -53154,7 +53128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4210385728254291324, guid: 45936ee2450079c47beee03b64c63512, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1331.184
+      value: 1332.535
       objectReference: {fileID: 0}
     - target: {fileID: 4210385728254291324, guid: 45936ee2450079c47beee03b64c63512, type: 3}
       propertyPath: m_LocalRotation.w

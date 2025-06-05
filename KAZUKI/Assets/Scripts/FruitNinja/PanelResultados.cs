@@ -74,7 +74,7 @@ public class PanelResultados : MonoBehaviour
     }
     private IEnumerator ReiniciarDespuesDeDerrota()
     {
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(4f);
         Time.timeScale = 1f; // Reactivar el tiempo antes de reiniciar
         ReiniciarJuego();
     }
