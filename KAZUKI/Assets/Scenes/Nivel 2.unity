@@ -274,6 +274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armario
       objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 5b92a38e6df29494f9d91764297ed3ef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
