@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: cover
+    second: {fileID: 2100000, guid: d9e7fbb3f2561d847a4fddc02c1e07c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: nation_gold
     second: {fileID: 2100000, guid: 807dc0c52810b3a4c9363784623bb055, type: 2}
   - first:

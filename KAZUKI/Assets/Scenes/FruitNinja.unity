@@ -1395,7 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3371d85cb22a51f468e1b112ac1860df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoInicial: 6
+  tiempoInicial: 60
   frutasObjetivo: 50
   textoContador: {fileID: 411078731}
   formatoTexto: ' {0}'

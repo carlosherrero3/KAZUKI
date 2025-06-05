@@ -57,6 +57,17 @@ public class SistemaMisiones : MonoBehaviour
     private IEnumerator CambiarEscenaDespuesDeTiempo()
     {
         yield return new WaitForSeconds(tiempoCambioEscena);
+
+        // Ocultar ambos paneles antes de cambiar de escena
+        if (panelExito != null && panelExito.panel != null)
+        {
+            panelExito.panel.SetActive(false);
+        }
+        if (panelFracaso != null && panelFracaso.panel != null)
+        {
+            panelFracaso.panel.SetActive(false);
+        }
+
         SceneManager.LoadScene(nombreSiguienteEscena);
     }
 
@@ -77,6 +88,32 @@ public class SistemaMisiones : MonoBehaviour
             }
         }
     }
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Si la escena cargada es FruitNinja, ocultar los paneles
+        if (scene.name == nombreSiguienteEscena)
+        {
+            if (panelExito != null && panelExito.panel != null)
+            {
+                panelExito.panel.SetActive(false);
+            }
+            if (panelFracaso != null && panelFracaso.panel != null)
+            {
+                panelFracaso.panel.SetActive(false);
+            }
+        }
+    }
+
 }
 
 [System.Serializable]
@@ -97,7 +134,11 @@ public class PanelDialogo
 
     public void MostrarPanel()
     {
+        if (panel == null) return;
+
         MonoBehaviour mono = panel.GetComponent<MonoBehaviour>();
+        if (mono == null) return;
+
         mono.StartCoroutine(SecuenciaDialogo());
     }
 
@@ -167,4 +208,5 @@ public class PanelDialogo
             audioSource.Stop();
         }
     }
+
 }
