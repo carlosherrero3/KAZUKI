@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class PanelResultados : MonoBehaviour
 {
@@ -44,6 +45,10 @@ public class PanelResultados : MonoBehaviour
         textoResultado.text = "Vaya... fallaste";
         textoFrutas.text = $"{frutasCortadas}/{frutasObjetivo} ";
         panelDerrota.SetActive(true);
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        StartCoroutine(ReiniciarDespuesDeDerrota());
     }
 
     private void CambiarANivel1()
@@ -66,6 +71,12 @@ public class PanelResultados : MonoBehaviour
     private void SalirAMenu()
     {
         SceneManager.LoadScene(escenaMenu);
+    }
+    private IEnumerator ReiniciarDespuesDeDerrota()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        Time.timeScale = 1f; // Reactivar el tiempo antes de reiniciar
+        ReiniciarJuego();
     }
 
 }
