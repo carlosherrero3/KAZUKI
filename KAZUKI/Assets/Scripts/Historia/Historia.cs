@@ -52,7 +52,7 @@ public class Historia : MonoBehaviour
             {
                 if (finDelTexto)
                 {
-                    SceneManager.LoadScene("Nivel 1"); // Cambia por el nombre real de tu escena
+                    SceneManager.LoadScene("Menu Inicio"); // Cambia por el nombre real de tu escena
                     return;
                 }
 
