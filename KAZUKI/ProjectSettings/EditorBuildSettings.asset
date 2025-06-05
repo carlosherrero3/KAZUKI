@@ -21,11 +21,17 @@ EditorBuildSettings:
     path: Assets/Scenes/FruitNinja.unity
     guid: cebf547a4a51cad4293b064a162422f0
   - enabled: 1
-    path: Assets/Scenes/Nivel 2.unity
+    path: Assets/Scenes/Nivel 1b.unity
+    guid: 7c1e481619abe1244b644807c91a5126
+  - enabled: 1
+    path: Assets/Scenes/Nivel 2b.unity
     guid: d65183646ba5a1142936bf068ff3be33
   - enabled: 1
     path: Assets/Scenes/PerfectTimingGame.unity
     guid: 83e57f30f89fd4b4ca1061d77f42018b
+  - enabled: 1
+    path: Assets/Scenes/Nivel 2.unity
+    guid: 9cc81ffded3fe3c479fc3785309e739f
   - enabled: 1
     path: Assets/Scenes/SplashScene.unity
     guid: 52d8563a90cb60a4e82a113eba142fa9

@@ -923,7 +923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafb46155d4b6c489cd482773a6bf6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Menu Inicio
+  sceneName: Historia
   inputSound: {fileID: 8300000, guid: 9eee94ceeb6996c4989962db48e41476, type: 3}
 --- !u!82 &1034264842
 AudioSource:
@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 575800150}
   fadeDuration: 3
-  sceneToLoad: Menu Inicio
+  sceneToLoad: Historia
 --- !u!1 &1415031525
 GameObject:
   m_ObjectHideFlags: 0

@@ -860,6 +860,9 @@ MonoBehaviour:
   indicator: {fileID: 407070770}
   perfectZone: {fileID: 1669829581}
   resultText: {fileID: 1225455606}
+  nextSceneName: Nivel 2b
+  indicatorMover: {fileID: 407070771}
+  speedIncrease: 200
 --- !u!114 &2064992632
 MonoBehaviour:
   m_ObjectHideFlags: 0
