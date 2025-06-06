@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TriggerArea : MonoBehaviour
 {
-    public string sceneName;               // Nombre de la escena a cargar
-    public GameObject uiPanel;             // Panel que se mostrará
+    public string sceneName;                // Nombre de la escena a cargar
+    public GameObject uiPanel;              // Panel que se mostrará
     public float delayBeforeSceneLoad = 2f; // Tiempo antes de cargar la escena
 
     private bool yaActivado = false;
@@ -16,18 +16,20 @@ public class TriggerArea : MonoBehaviour
         if (!yaActivado && other.CompareTag("Player"))
         {
             yaActivado = true;
-
-            if (uiPanel != null)
-            {
-                uiPanel.SetActive(true);
-            }
-
-            Invoke("LoadScene", delayBeforeSceneLoad);
+            StartCoroutine(ShowPanelAndLoad());
         }
     }
 
-    void LoadScene()
+    private IEnumerator ShowPanelAndLoad()
     {
+        if (uiPanel != null)
+            uiPanel.SetActive(true);  // Muestra el panel
+
+        yield return new WaitForSeconds(delayBeforeSceneLoad);
+
+        if (uiPanel != null)
+            uiPanel.SetActive(false); // Oculta el panel (opcional)
+
         SceneManager.LoadScene(sceneName);
     }
 }

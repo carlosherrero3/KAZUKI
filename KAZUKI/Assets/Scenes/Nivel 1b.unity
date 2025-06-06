@@ -3870,7 +3870,7 @@ AudioSource:
   m_GameObject: {fileID: 196179288}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 44ff2a5665aa6af4899268411c1592c0, type: 2}
   m_audioClip: {fileID: 8300000, guid: 72db311515e6ca742a65a59f4d5be72a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.795
@@ -3966,7 +3966,7 @@ AudioSource:
   m_GameObject: {fileID: 196179288}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 44ff2a5665aa6af4899268411c1592c0, type: 2}
   m_audioClip: {fileID: 8300000, guid: d931e374ea0cdd94f9a41db25575971c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.825
@@ -49623,6 +49623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1982031798}
   - component: {fileID: 1982031799}
+  - component: {fileID: 1982031800}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -49696,13 +49697,38 @@ MonoBehaviour:
   m_FillRect: {fileID: 2049348411}
   m_HandleRect: {fileID: 662492838}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1982031800}
+        m_TargetAssemblyTypeName: ControlMusica, Assembly-CSharp
+        m_MethodName: ControldeMusica
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1982031800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982031797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759799973abc8a9409ec1f62362cc669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 44ff2a5665aa6af4899268411c1592c0, type: 2}
 --- !u!1001 &1983247321
 PrefabInstance:
   m_ObjectHideFlags: 0
