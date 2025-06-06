@@ -782,19 +782,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   historiaTexto: {fileID: 250597960}
   parrafos:
-  - Esta historia comienza como todas las demas.
-  - Kazuki, nuestro protagonista vivia tranquilamente.
+  - "Esta historia comienza como todas las dem\xE1s."
+  - "Kazuki, nuestro protagonista viv\xEDa tranquilamente."
   - Su aldea no era muy grande, pero estaba llena de paz
-  - Todo el mundo vivia tranquilamente en las tierras del Shogunato.
+  - "Todo el mundo viv\xEDa tranquilamente en las tierras del Shogunato."
   - Hasta aquella noche.
   - "Aquella noche, su aldea fue arrasada por los D\u0101kuninja."
   - "La corona del destino hab\xEDa sido robada y con ello el Shogunato se sumi\xF3
     en el caos."
-  - "Kazuki pudo ver esa noche como uno de los cinco samurais del emperador ca\xEDa."
+  - "Kazuki pudo ver esa noche como uno de los cinco samur\xE1is del emperador ca\xEDa."
   - Este, antes de morir le entrega su espada, la "Kikodoro", una de las espadas
     ancestrales.
   - "Es aqu\xED donde comienza la historia."
-  - Es aqui donde comienza la aventura de Kazuki.
+  - "Es aqu\xED donde comienza la aventura de Kazuki."
   velocidadEscritura: 0.1
   eventosFade:
   - lineaDeTexto: 2
