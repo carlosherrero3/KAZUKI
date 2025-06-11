@@ -8,27 +8,27 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: aiStandardSurface4
-    second: {fileID: 2100000, guid: 5e6189e9c9a0c4b438354104a1df7454, type: 2}
+    second: {fileID: 2100000, guid: 0da71e5d3313ddd4a905f48d1ca80c20, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: aiStandardSurface5
-    second: {fileID: 2100000, guid: d3b87d1d821f0ae4bb655fecee083ff0, type: 2}
+    second: {fileID: 2100000, guid: 23c2c1e44430c474f9dd4645d364bef4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: aiStandardSurface6
-    second: {fileID: 2100000, guid: fa174a07f6adec04198cd16aa9f20d2c, type: 2}
+    second: {fileID: 2100000, guid: cb7b4940ce03ce140b14ddafc991e53b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: aiStandardSurface7
-    second: {fileID: 2100000, guid: 59c909f27c618bd4cb958ad11e4c8650, type: 2}
+    second: {fileID: 2100000, guid: 0ea7118fecdedbb40916a882c190077e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: aiStandardSurface8
-    second: {fileID: 2100000, guid: 7907648ecbf670e40bf812453cc326c2, type: 2}
+    second: {fileID: 2100000, guid: 35c71c6875cf43c4ca8f6ffc63afc1e8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

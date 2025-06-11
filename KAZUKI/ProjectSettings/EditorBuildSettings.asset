@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Libro.unity
     guid: 6ab5b683fa4481a43a495e76f8eb1529
+  - enabled: 1
+    path: Assets/Scenes/Inventario.unity
+    guid: 80f6e21af424e0f488caf877c9420d6a
   m_configObjects: {}
