@@ -61360,6 +61360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020393096}
   - component: {fileID: 1020393097}
+  - component: {fileID: 1020393098}
   m_Layer: 0
   m_Name: '- SCRIPTS 2 -'
   m_TagString: Untagged
@@ -61398,6 +61399,19 @@ MonoBehaviour:
   zoomFOV: 30
   normalFOV: 60
   zoomSpeed: 5
+--- !u!114 &1020393098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020393095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af600449cd3fff544853286169878f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Inventario
 --- !u!1 &1027404443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 4161cc178784b2a49b27f66b7a836e50, type: 3}
